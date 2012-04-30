@@ -8,6 +8,6 @@ messages = [
 
 module.exports = (robot) ->
   robot.respond /(.*)/i, (msg) ->
-    if msg.message.user.id == 762812
+    if msg.message.user.id == 7026192
       msg.send msg.random messages
       return
