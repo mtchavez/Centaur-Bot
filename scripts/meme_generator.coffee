@@ -23,9 +23,9 @@
 
 module.exports = (robot) ->
   robot.respond /Y U NO (.+)/i, (msg) ->
-    if msg.message.user.id == 762812
-      msg.reply 'Fuck off'
-      return
+    # if msg.message.user.id == 762812
+    #   msg.reply 'Fuck off'
+    #   return
     
     caption = msg.match[1] || ""
 
@@ -33,89 +33,89 @@ module.exports = (robot) ->
       msg.send url
 
   robot.respond /(I DON'?T ALWAYS .*) (BUT WHEN I DO,? .*)/i, (msg) ->
-    if msg.message.user.id == 762812
-      msg.reply 'Fuck off'
-      return
+    # if msg.message.user.id == 762812
+    #   msg.reply 'Fuck off'
+    #   return
     
     memeGenerator msg, 74, 2485, msg.match[1], msg.match[2], (url) ->
       msg.send url
 
   robot.respond /(.*)(O\s?RLY\??.*)/i, (msg) ->
-    if msg.message.user.id == 762812
-      msg.reply 'Fuck off'
-      return
+    # if msg.message.user.id == 762812
+    #   msg.reply 'Fuck off'
+    #   return
     
     memeGenerator msg, 920, 117049, msg.match[1], msg.match[2], (url) ->
       msg.send url
 
   robot.respond /(.*)(SUCCESS|NAILED IT.*)/i, (msg) ->
-    if msg.message.user.id == 762812
-      msg.reply 'Fuck off'
-      return
+    # if msg.message.user.id == 762812
+    #   msg.reply 'Fuck off'
+    #   return
     
     memeGenerator msg, 121, 1031, msg.match[1], msg.match[2], (url) ->
       msg.send url
 
   robot.respond /(.*) (ALL the .*)/i, (msg) ->
-    if msg.message.user.id == 762812
-      msg.reply 'Fuck off'
-      return
+    # if msg.message.user.id == 762812
+    #   msg.reply 'Fuck off'
+    #   return
 
     memeGenerator msg, 6013, 1121885, msg.match[1], msg.match[2], (url) ->
       msg.send url
 
   robot.respond /(.*) (\w+\sTOO DAMN .*)/i, (msg) ->
-    if msg.message.user.id == 762812
-      msg.reply 'Fuck off'
-      return
+    # if msg.message.user.id == 762812
+    #   msg.reply 'Fuck off'
+    #   return
 
     memeGenerator msg, 998, 203665, msg.match[1], msg.match[2], (url) ->
       msg.send url
 
   robot.respond /(GOOD NEWS EVERYONE[,.!]?) (.*)/i, (msg) ->
-    if msg.message.user.id == 762812
-      msg.reply 'Fuck off'
-      return
+    # if msg.message.user.id == 762812
+    #   msg.reply 'Fuck off'
+    #   return
 
     memeGenerator msg, 1591, 112464, msg.match[1], msg.match[2], (url) ->
       msg.send url
 
   robot.respond /khanify (.*)/i, (msg) ->
-    if msg.message.user.id == 762812
-      msg.reply 'Fuck off'
-      return
+    # if msg.message.user.id == 762812
+    #   msg.reply 'Fuck off'
+    #   return
 
     memeGenerator msg, 6443, 1123022, "", khanify(msg.match[1]), (url) ->
       msg.send url
 
   robot.respond /(NOT SURE IF .*) (OR .*)/i, (msg) ->
-    if msg.message.user.id == 762812
-      msg.reply 'Fuck off'
-      return
+    # if msg.message.user.id == 762812
+    #   msg.reply 'Fuck off'
+    #   return
 
     memeGenerator msg, 305, 84688, msg.match[1], msg.match[2], (url) ->
       msg.send url
 
   robot.respond /(YO DAWG .*) (SO .*)/i, (msg) ->
-    if msg.message.user.id == 762812
-      msg.reply 'Fuck off'
-      return
+    # if msg.message.user.id == 762812
+    #   msg.reply 'Fuck off'
+    #   return
 
     memeGenerator msg, 79, 108785, msg.match[1], msg.match[2], (url) ->
       msg.send url
 
   robot.respond /hey girl (.*)/i, (msg) ->
-    if msg.message.user.id == 762812
-      msg.reply 'Fuck off'
-      return
+    # if msg.message.user.id == 762812
+    #   msg.reply 'Fuck off'
+    #   return
 
     memeGenerator msg, 354251, 2094971, 'HEY GIRL', msg.match[1], (url) ->
       msg.send url
 
   robot.respond /(.*)\s?fap(.*)/i, (msg) ->
-    if msg.message.user.id == 762812
-      msg.reply 'Fuck off'
-      return
+    # if msg.message.user.id == 762812
+    #   msg.reply 'Fuck off'
+    #   return
 
     memeGenerator msg, 16379, 1146483, msg.match[1], msg.match[2], (url) ->
       msg.send url

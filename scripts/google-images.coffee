@@ -10,25 +10,25 @@
 
 module.exports = (robot) ->
   robot.respond /(image|img)( me)? (.*)/i, (msg) ->
-    if msg.message.user.id == 762812
-      msg.reply 'Fuck off'
-      return
+    # if msg.message.user.id == 762812
+    #   msg.reply 'Fuck off'
+    #   return
     
     imageMe msg, msg.match[3], (url) ->
       msg.send url
   
   robot.respond /animate me (.*)/i, (msg) ->
-    if msg.message.user.id == 762812
-      msg.reply 'Fuck off'
-      return
+    # if msg.message.user.id == 762812
+    #   msg.reply 'Fuck off'
+    #   return
     
     imageMe msg, "animated #{msg.match[1]}", (url) ->
       msg.send url
   
   robot.respond /(?:mo?u)?sta(?:s|c)he?(?: me)? (.*)/i, (msg) ->
-    if msg.message.user.id == 762812
-      msg.reply 'Fuck off'
-      return
+    # if msg.message.user.id == 762812
+    #   msg.reply 'Fuck off'
+    #   return
     
     type = Math.floor(Math.random() * 3)
     mustachify = "http://mustachify.me/#{type}?src="

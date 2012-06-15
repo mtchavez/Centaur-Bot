@@ -36,9 +36,9 @@ elles = [
 
 module.exports = (robot) ->
   robot.hear /.*(elle|basey).*/i, (msg) ->
-    if msg.message.user.id == 762812
-      msg.reply 'Fuck off'
-      return
+    # if msg.message.user.id == 762812
+    #   msg.reply 'Fuck off'
+    #   return
     
     msg.send msg.random elles
     
